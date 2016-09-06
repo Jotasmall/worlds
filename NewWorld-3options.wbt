@@ -237,14 +237,14 @@ DEF blueLine1N Transform {
     }
   ]
 }
-DEF greyLine1N Transform {
+DEF greyLine1N-Red Transform {
   translation -0.3 0.0004 -0.6
   rotation 0 1 0 1.57
   children [
     Shape {
       appearance Appearance {
         material Material {
-          diffuseColor 0.15 0.15 0.15
+          diffuseColor 1 0 0
         }
       }
       geometry Plane {
@@ -253,14 +253,14 @@ DEF greyLine1N Transform {
     }
   ]
 }
-DEF greyLine2N Transform {
+DEF greyLine2N-Blue Transform {
   translation 0.3 0.0004 -0.4
   rotation 0 1 0 1.57
   children [
     Shape {
       appearance Appearance {
         material Material {
-          diffuseColor 0.15 0.15 0.15
+          diffuseColor 0 0 1
         }
       }
       geometry Plane {
@@ -1923,5 +1923,4 @@ DEF Blue DifferentialWheels {
     }
   ]
   name "tamBlue"
-  controller "TAM_Random"
 }
