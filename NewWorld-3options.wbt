@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.00186742 -0.883076 -0.469226 3.14863
-  position 0.0177402 2.32178 -1.62907
+  orientation -0.000465217 -0.890016 -0.455928 3.13979
+  position 0.00684357 2.30549 -1.71045
 }
 Background {
   skyColor [
@@ -21,7 +21,7 @@ DirectionalLight {
 RectangleArena {
   floorSize 1.52 1.8
   floorTextureUrl [
-    "textures/metal.png"
+    "textures/metal2.png"
   ]
 }
 DEF Grey-Area Transform {
@@ -108,10 +108,8 @@ DEF LongWall-BlueGrey Solid {
   children [
     Shape {
       appearance Appearance {
-        texture ImageTexture {
-          url [
-            "textures/metal.png"
-          ]
+        material Material {
+          diffuseColor 0.270588 0.270588 0.270588
         }
       }
       geometry DEF wallSeparator Box {
@@ -126,10 +124,8 @@ DEF ShortWall-BlueGrey Solid {
   children [
     Shape {
       appearance Appearance {
-        texture ImageTexture {
-          url [
-            "textures/metal.png"
-          ]
+        material Material {
+          diffuseColor 0.270588 0.270588 0.270588
         }
       }
       geometry DEF wallSeparatorShort Box {
@@ -178,10 +174,8 @@ DEF LongWall-RedGrey Solid {
   children [
     Shape {
       appearance Appearance {
-        texture ImageTexture {
-          url [
-            "textures/metal.png"
-          ]
+        material Material {
+          diffuseColor 0.270588 0.270588 0.270588
         }
       }
       geometry USE wallSeparator
@@ -194,10 +188,8 @@ DEF ShortWall-RedGrey Solid {
   children [
     Shape {
       appearance Appearance {
-        texture ImageTexture {
-          url [
-            "textures/metal.png"
-          ]
+        material Material {
+          diffuseColor 0.270588 0.270588 0.270588
         }
       }
       geometry USE wallSeparatorShort
@@ -1923,4 +1915,19 @@ DEF Blue DifferentialWheels {
     }
   ]
   name "tamBlue"
+}
+E-puck {
+  translation 0 0 -0.39
+  controller "CallDuty_v1"
+  name "e-puck2801"
+  camera_pixelSize 2
+  turretSlot [
+    Display {
+      name "displayExtra"
+      width 52
+      height 39
+      windowPosition 0.183766 0.0584046
+      pixelSize 2
+    }
+  ]
 }
